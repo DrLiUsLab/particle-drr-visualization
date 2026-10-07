@@ -1,8 +1,7 @@
 """Frame-resolved particle coverage and dust removal ratio (DRR).
 
-Based on the user's 10sdDRR.py: gray enhancement, a fixed first-frame
-percentile threshold, and DRR = (R0 - Rt) / R0. This version adds a CLI,
-frame-directory input, explicit ROI masks, and guards for empty input.
+The analysis uses a fixed ROI and first-frame percentile threshold, then
+compares each frame's segmented coverage with the baseline coverage.
 """
 
 from __future__ import annotations
